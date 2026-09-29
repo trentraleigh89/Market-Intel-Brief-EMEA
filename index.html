@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#000000">
-<title>LF/HS Biweekly Intelligence Brief — Week 27, 2026</title>
+<title>LF/HS Monthly Intelligence Brief, EMEA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -248,7 +248,7 @@ const FONT_BODY    = "'Montserrat', system-ui, -apple-system, sans-serif";
 // /us/index.html vs /emea/index.html. Default 'us' if running raw JSX.
 const REGION = 'emea';
 
-const REGIONS = [
+const REGIONS_ALL = [
   {
     id: 'us',
     name: 'USA',
@@ -274,6 +274,7 @@ const REGIONS = [
     languageMatches: ['ja', 'ja-JP', 'zh', 'zh-CN', 'zh-TW', 'zh-HK', 'ko', 'ko-KR', 'hi', 'hi-IN', 'en-AU', 'en-NZ', 'en-SG', 'en-IN', 'th', 'vi', 'id', 'ms'],
   },
 ];
+const REGIONS = REGIONS_ALL.filter(r => r.id !== 'apj');
 const currentRegion = REGIONS.find(r => r.id === REGION) || REGIONS[0];
 
 // -------------------- VERTICALS (region-aware) --------------------
@@ -4084,6 +4085,2059 @@ apj: [
 };
 const BRIEFS = BRIEFS_BY_REGION[REGION];
 
+// ==================== MONTHLY CONSOLIDATED VIEW (added 2026-09-28) ====================
+// Issues stay stored exactly as shipped. MONTH_PLAN references each card by its original
+// issue id, vertical and index, so every reused insight renders unchanged, front and flip side,
+// and saved or rated cards keep their original ids. New September cards live in SEPT_UPDATE.
+const SEPT_UPDATE = {
+ "id": "w2026-39-update-emea",
+ "issue": "September 2026 update",
+ "weekRange": "September 15 – September 30, 2026",
+ "weekShort": "Sep 15–Sep 30",
+ "oneBigIdea": {
+  "headline": "",
+  "body": ""
+ },
+ "trending": [],
+ "verticals": {
+  "health-clubs": [
+   {
+    "headline": "VivaGym owner Providence bid a reported 600 million euros for Fitness Park's 300-club French business.",
+    "tags": [
+     "M&A",
+     "BUDGET"
+    ],
+    "context": "Providence Equity Partners, owner of VivaGym, made a reported 600 million euro bid for Fitness Park's French business, Health Club Management reported Sept. 17. JPMorgan runs the sale and four bidders remain. No deal is agreed. Fitness Park runs more than 300 clubs in France and more than 400 in total, with about 1.4 million members, 461 million euros in 2025 network revenue and about 60 million euros in EBITDA.",
+    "implication": "Signal. A new owner of a 300-club franchise network usually reviews procurement to set one set of supplier terms across the estate. Fitness Park group procurement, the franchise development director and the winning bidder's operating partners decide, likely in 2027 after signing. A tracked competitor with strong Iberian share will defend its position. Map the French procurement and franchise contacts now, before a new owner resets supplier terms.",
+    "conversation": "Fitness Park France is in a four-bidder sale, and a new owner will review supplier terms. Let me help you map its procurement and franchise contacts before that review starts.",
+    "source": "Health Club Management",
+    "sourceUrl": "https://www.healthclubmanagement.co.uk/health-club-management-news/VivaGym-owner-Providence-bids-600m-for-Fitness-Park-France/363641"
+   },
+   {
+    "headline": "Construction began on a 45 million pound Stevenage leisure center with a 250-station gym opening in 2028.",
+    "tags": [
+     "LEISURE-TRUST",
+     "NEW-BUILD"
+    ],
+    "context": "Construction started on the 45 million pound Stevenage Sports and Leisure Centre in Hertfordshire, England, Health Club Management reported Sept. 22. Everyone Active will run it for Stevenage Borough Council. The 6,330-square-meter building includes a 250-station gym, three fitness studios, an indoor cycling studio, a six-court sports hall and a 10-lane pool. Morgan Sindall is building it under the SCAPE framework, with 10 million pounds from the Towns Fund.",
+    "implication": "Opportunity. A 250-station gym ranks among the largest public leisure packages this year, and no supplier is named. Everyone Active buys through group-level supply agreements, so its procurement and fitness product heads decide, with the council's leisure client officer signing off. Equipment is usually specified 12 to 18 months before opening, which puts this decision in 2027. Get on the operator's supplier list and into early layouts now.",
+    "conversation": "Your new 250-station leisure gym is under construction for a 2028 opening. Let me help you get in front of Everyone Active procurement and the council before the fit-out specification is set.",
+    "source": "Health Club Management",
+    "sourceUrl": "https://www.healthclubmanagement.co.uk/health-club-management-news/Work-starts-on-45m-leisure-centre-for-Hertfordshire-town/363617"
+   },
+   {
+    "headline": "Urban Gym Group named Marlow and Wembley as its first UK TrainMore clubs and wants more sites.",
+    "tags": [
+     "CONVERSION",
+     "ROLLOUT"
+    ],
+    "context": "Urban Gym Group runs more than 60 clubs under eight brands across the Netherlands, UK, Ireland and UAE. Health Club Management reported Sept. 18 that it named Marlow and Wembley as the first UK sites for TrainMore, its Dutch brand with more than 50 clubs. Marlow, a former office building, opens in November 2026. Wembley opens later in 2026 in a site now run by a budget operator. No investment figure was given.",
+    "implication": "Opportunity. Marlow opens in November, so its equipment is likely chosen, but Wembley and the next UK sites are open. TrainMore pairs strength floors with recovery, reformer and women-only zones. Urban Gym Group's UK development and fit-out lead buys, and chief executive Neil Randall sets brand standards. Next-wave decisions fall in late 2026 and 2027. The group bought Dutch operator Rhythmsports on Sept. 8, which confirms an active expansion budget.",
+    "conversation": "You are bringing TrainMore to the UK and looking for more sites. Let me help you get a strength and women's-zone layout in front of your UK fit-out team before the next leases are signed.",
+    "source": "Health Club Management",
+    "sourceUrl": "https://www.healthclubmanagement.co.uk/health-club-management-news/Urban-Gym-Group-reveals-first-two-UK-locations-for-TrainMore/363643"
+   },
+   {
+    "headline": "Common Bond shut all its London studios, which could return Barrecore and Boom Cycle sites to market.",
+    "tags": [
+     "BOUTIQUE"
+    ],
+    "context": "Common Bond closed all its London studios until further notice after reports that instructors were warned their pay would be late, Health Club Management reported Sept. 24. The group runs Barrecore, Boom Cycle, Reformcore and Triyoga and owns Kobox, bought when United Fitness Brands was liquidated in summer 2025. Companies House shows no insolvency process. Two leaders left between May and August 2026, and Nectar Capital holds significant control.",
+    "implication": "Signal. An administration would return prime London boutique leases with cycle, reformer and yoga fit-outs to the market. Operators taking the leases, plus any administrator selling equipment, become the buyers. Timing depends on a formal insolvency filing, which has not happened. Watch for an administrator appointment and landlord re-letting over the next 30 to 90 days, since used equipment sales could undercut new fit-out deals.",
+    "conversation": "Common Bond has closed its London studios, and those sites may be re-let. Let me help you track which operators are circling the leases so we can pitch a fit-out first.",
+    "source": "Health Club Management",
+    "sourceUrl": "https://www.healthclubmanagement.co.uk/health-club-management-news/Common-Bond-shuts-all-studios-until-further-notice-amid-reports-of-delayed-instructor-payments/363672"
+   }
+  ],
+  "hospitality": [
+   {
+    "headline": "Goldman Sachs is financing a 260 million euro longevity resort in Marbella that opens in 2029.",
+    "tags": [
+     "WELLNESS",
+     "NEW-BUILD"
+    ],
+    "context": "Ilanga Capital secured a 145 million euro senior loan from Goldman Sachs Alternatives for Oakmond, a 260 million euro longevity resort on the former Incosol site in Marbella, Spain, Travel Extra reported Sept. 15. The 53,000-square-meter project includes a 140-room luxury hotel and 28 private residences. Construction runs 36 months from autumn 2026, with opening targeted for the third quarter of 2029. The program pairs preventive medicine and diagnostics with exercise areas.",
+    "implication": "Opportunity. Oakmond has named no operator or fitness supplier, so the equipment program is open. In a medical longevity resort, the developer's wellness or clinical lead and the interior designer decide, and they will want equipment that produces data for the diagnostics program. Specification typically lands 12 to 18 months before opening, in late 2027 or early 2028. Reach Ilanga Capital at the design stage to set the performance and data specification.",
+    "conversation": "You are building Oakmond as a clinical longevity resort in Marbella. Let me help you map exercise zones to the diagnostics program so training data supports the medical protocols from day one.",
+    "source": "Travel Extra",
+    "sourceUrl": "https://www.travelextra.ie/goldman-sachs-has-backed-a-longevity-resort-project-in-marbella/"
+   },
+   {
+    "headline": "Valk Exclusief started construction on a 338-key Cologne hotel with a fitness and pool area opening in 2028.",
+    "tags": [
+     "UPSCALE",
+     "NEW-BUILD"
+    ],
+    "context": "Dutch hotel group Valk Exclusief started construction on Van der Valk Hotel Koln am Dom, a four-star-superior new build near Cologne Cathedral in Germany, Hospitality Net reported Sept. 16. The six-floor property will have 338 rooms, suites and long-stay apartments, a fitness and wellness area with a swimming pool, 10 meeting rooms, several restaurants and a public rooftop bar. Opening is planned for 2028. No gym supplier is named.",
+    "implication": "Opportunity. Valk Exclusief owns and operates its hotels, so group procurement or the in-house project team buys rather than a third-party manager. A 2028 opening puts equipment selection in 2027. Long-stay apartments drive more daily gym use than a standard business hotel, which supports a larger strength footprint and commercial-grade durability. A win in Cologne could set the equipment standard for other Van der Valk properties.",
+    "conversation": "You have broken ground on a 338-key Cologne hotel with long-stay apartments and a full fitness and pool area. Let me help you size the gym for extended-stay guests before the 2027 FF&E window.",
+    "source": "Hospitality Net",
+    "sourceUrl": "https://www.hospitalitynet.org/announcement/41015108/valk-exclusief-starts-construction-of-new-four-star-superior-hotel-in-the-heart-of-cologne-germany"
+   },
+   {
+    "headline": "Marriott signed The Ritz-Carlton, Kemer, its first EMEA luxury all-inclusive resort, for a 2028 opening.",
+    "tags": [
+     "LUXURY",
+     "RESORT"
+    ],
+    "context": "Marriott International signed with Turkish real estate investment company Ozak GYO to open The Ritz-Carlton, Kemer, All-Inclusive in Turkey's Antalya region in 2028, Hosteltur reported Sept. 16. The new-build resort will have 141 rooms and suites plus villas of one to five bedrooms on more than 1.2 kilometers of Mediterranean coastline. Plans include a fitness center, indoor and outdoor pools, a spa and a sports center with tennis and padel courts.",
+    "implication": "Opportunity. Marriott's first luxury all-inclusive format in the region can set the fitness reference for later all-inclusive signings. Ozak GYO and its hospitality arm, Ela Hospitality, control FF&E buying under Ritz-Carlton brand standards. A 2028 opening puts equipment decisions in 2027. All-inclusive guests of every age need a wider mix of cardio, strength and group training product than a city hotel gym carries.",
+    "conversation": "You are opening Marriott's first luxury all-inclusive in EMEA at Kemer in 2028. Let me help you build a fitness and sports center plan that serves families and performance guests under Ritz-Carlton standards.",
+    "source": "Hosteltur",
+    "sourceUrl": "https://www.hosteltur.com/178666_marriott-entra-en-el-lujo-todo-incluido-del-mediterraneo-con-ritz-carlton.html"
+   }
+  ],
+  "multi-unit": [
+   {
+    "headline": "NatWest lent 190 million pounds to urbanest for an 897-bed student scheme on London's Albert Embankment.",
+    "tags": [
+     "PBSA",
+     "NEW-BUILD"
+    ],
+    "context": "NatWest provided a 190 million pound green development loan to urbanest for Albert Embankment, an 897-bed purpose-built student accommodation scheme in Vauxhall, London, the bank said Sept. 16. Midgard is main contractor on the two connected towers of 30 and 27 stories, which target Passivhaus and BREEAM Outstanding certification. Demolition is complete and main works are underway. Completion is expected in summer 2029 for the 2029-30 academic year.",
+    "implication": "Opportunity. With financing closed and main works underway, the fit-out award is years away, which leaves time to shape the specification. Urbanest's development and operations team buys, with Midgard's fit-out procurement following. The bank describes resident amenities only as extensive, so gym scope is not public. Amenity specification should run through 2027, with equipment procurement in late 2028 ahead of a summer 2029 handover.",
+    "conversation": "You just closed 190 million pounds for 897 beds at Albert Embankment, opening in 2029. Let me help you shape the resident fitness space now, while the amenity plan is open.",
+    "source": "NatWest Group",
+    "sourceUrl": "https://www.natwestgroup.com/news-and-insights/news-room/press-releases/2026/natwest-backs-urbanest-for-land-mark-riverside-student-accommoda.html"
+   }
+  ],
+  "performance": [
+   {
+    "headline": "Arsenal is exploring a London Colney first-team hub while a temporary women's strength gym goes through planning.",
+    "tags": [
+     "PRO-CLUB",
+     "TRAINING-GROUND"
+    ],
+    "context": "Arseblog News reported Sept. 18 that Arsenal is exploring a redevelopment of its London Colney training center into a purpose-built men's first-team hub with a player performance center, medical and rehabilitation space, changing rooms, offices and media facilities. Plans are early and scope could change. Separate filings seek a temporary 30-by-15-meter strength and conditioning gym for the women's team during refurbishment. No cost or timeline is disclosed.",
+    "implication": "Opportunity. Arsenal holds two equipment decisions at one site. The head of women's performance and the facilities lead will specify the temporary women's gym within months once planning clears. The head of performance and sports science director will set the first-team hub strength floor over several years. The supplier that fits the temporary gym gains position for the permanent specification before architects lock layouts.",
+    "conversation": "You are planning a temporary women's strength gym and a new first-team hub at London Colney. Let me help your performance staff with a phased strength floor plan that scales from the temporary build to the permanent one.",
+    "source": "Arseblog News",
+    "sourceUrl": "https://arseblog.news/2026/09/training-ground-revamp-2026/"
+   },
+   {
+    "headline": "Qiddiya awarded a design-build contract for Saudi Arabia's 30-court National Tennis Centre with an indoor training center.",
+    "tags": [
+     "STADIUM",
+     "TRAINING-GROUND"
+    ],
+    "context": "Qiddiya Investment Company awarded a design-build contract to a Bouygues Construction and Almabani General Contractors joint venture for Saudi Arabia's National Tennis Centre, about 45 kilometers from Riyadh, SaudiGulf Projects reported Sept. 6. Populous designed the 30-court complex to ATP, WTA and ITF standards. It includes a 15,000-seat Centre Court, 14 practice courts, an indoor training center, hydrotherapy and cryotherapy recovery, and player support services. Contract value was not disclosed.",
+    "implication": "Signal. Under a design-build award, the joint venture or a specialist fit-out subcontractor will likely procure player gyms and warm-up areas rather than the venue. The joint venture's MEP and FF&E procurement leads and Qiddiya's sports venue operations team are the contacts. Construction is underway, so the equipment window likely falls 12 to 24 months out, before tournament-standard commissioning. The contract value is not public.",
+    "conversation": "Your National Tennis Centre is under a Bouygues and Almabani design-build contract. Let me help you reach the FF&E procurement lead with a player gym and warm-up specification built to tour standards.",
+    "source": "SaudiGulf Projects",
+    "sourceUrl": "https://www.saudigulfprojects.com/2026/09/qiddiya-awards-design-build-contract-to-bouygues-almabani-jv-for-33000-seat-national-tennis-centre/"
+   }
+  ]
+ },
+ "flags": [
+  {
+   "competitor": "Technogym",
+   "priority": "high",
+   "note": "Health Club Management reported Sept. 25 that The Beaumont Mayfair finished a spa refurbishment led by chief executive Stuart Procter, adding sauna, steam, cold plunge, a hammam and a plunge pool. The 24-hour gym runs Technogym equipment with Peloton bikes and Pilates kit. Another Mayfair-tier hotel chose Technogym for the main floor and a third party for connected cardio, which shows the hotel will split the specification. Counter with a single-supplier full floor that includes connected cardio and cuts vendor management. Put The Beaumont and its sister properties on the UK hospitality target list and time a connected cardio pitch to the Peloton refresh."
+  },
+  {
+   "competitor": "Technogym",
+   "priority": "high",
+   "note": "Technogym and World Athletics bill Run X as the first world treadmill championship, a 5-kilometer race on connected Technogym treadmills with a live global leaderboard. Club qualifiers start in October 2026, continental finals follow in January 2027, and the final runs at Technogym Village in Cesena in March 2027 with a $100,000 prize purse. The Sept. 24 to 26 summit trained staff from more than 300 clubs. Technogym is tying clubs to its treadmill fleet through events, which sets up fleet upgrades. Counter with an open member challenge program. Brief EMEA sales on which accounts joined Run X and offer them a connected cardio challenge."
+  },
+  {
+   "competitor": "Eleiko",
+   "priority": "medium",
+   "note": "Eleiko said Sept. 23 that it supplied two full competition setups, more than 50 warm-up and training stations, bars, plates, platforms, racks and para powerlifting benches for Glasgow 2026. Glasgow 2026 sport director Natalie Cunningham called Eleiko a true delivery partner. The Games ran 47 para sport events, the largest integrated para program in Games history. Eleiko is using a major UK event to build standing with performance, university and governing body buyers. Counter with the full Hammer Strength performance range beyond competition barbells. Target Scottish universities and high-performance centers with a performance floor and adaptive equipment offer before Eleiko follows up on the Games legacy."
+  }
+ ],
+ "metadata": {
+  "processed": "n/a",
+  "delivered": 10,
+  "dedup": "Late-September research pass feeding the September monthly view."
+ }
+};
+BRIEFS.push(SEPT_UPDATE);
+const MONTH_PLAN = [
+ {
+  "id": "m2026-09-emea",
+  "year": 2026,
+  "month": 9,
+  "issues": [
+   "37"
+  ],
+  "overview": {
+   "lead": {
+    "b": "w2026-37-emea"
+   },
+   "supporting": [
+    {
+     "headline": "A tracked competitor took the gym at seven named EMEA properties in September, from Mayfair to Norway.",
+     "summary": "The Beaumont Mayfair joined placements in London, the Algarve, West Sussex, Malta, Saudi Arabia and Baerum, and owners or spa consultants made each call without a brand standards team. Field action: build a UK and Iberia luxury hospitality target list and reach the spa consultants before fit-out.",
+     "vertical": "hospitality"
+    },
+    {
+     "headline": "Goldman Sachs is financing a 260 million euro longevity resort in Marbella with no fitness supplier named.",
+     "summary": "Construction starts this autumn for a 2029 opening, so the exercise and data specification stays open until late 2027. Field action: reach Ilanga Capital's wellness lead at the design stage.",
+     "vertical": "hospitality"
+    }
+   ],
+   "leadNote": "Note: these filings close Sept. 30 and Oct. 1. After those dates, ask which projects filed and what scope each carries."
+  },
+  "verticals": {
+   "health-clubs": {
+    "top": [
+     {
+      "n": "health-clubs",
+      "i": 0
+     },
+     {
+      "n": "health-clubs",
+      "i": 1
+     },
+     {
+      "b": "w2026-37-emea",
+      "v": "health-clubs",
+      "i": 0
+     }
+    ],
+    "more": [
+     {
+      "n": "health-clubs",
+      "i": 2
+     },
+     {
+      "b": "w2026-37-emea",
+      "v": "health-clubs",
+      "i": 1
+     },
+     {
+      "b": "w2026-37-emea",
+      "v": "health-clubs",
+      "i": 2
+     },
+     {
+      "n": "health-clubs",
+      "i": 3
+     }
+    ]
+   },
+   "hospitality": {
+    "top": [
+     {
+      "n": "hospitality",
+      "i": 0
+     },
+     {
+      "n": "hospitality",
+      "i": 1
+     },
+     {
+      "n": "hospitality",
+      "i": 2
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-37-emea",
+      "v": "hospitality",
+      "i": 0
+     },
+     {
+      "b": "w2026-37-emea",
+      "v": "hospitality",
+      "i": 1
+     }
+    ]
+   },
+   "multi-unit": {
+    "top": [
+     {
+      "b": "w2026-37-emea",
+      "v": "multi-unit",
+      "i": 0
+     },
+     {
+      "b": "w2026-37-emea",
+      "v": "multi-unit",
+      "i": 1
+     },
+     {
+      "n": "multi-unit",
+      "i": 0
+     }
+    ],
+    "more": []
+   },
+   "performance": {
+    "top": [
+     {
+      "b": "w2026-37-emea",
+      "v": "performance",
+      "i": 2
+     },
+     {
+      "b": "w2026-37-emea",
+      "v": "performance",
+      "i": 0
+     },
+     {
+      "b": "w2026-37-emea",
+      "v": "performance",
+      "i": 1
+     }
+    ],
+    "more": [
+     {
+      "n": "performance",
+      "i": 0
+     },
+     {
+      "n": "performance",
+      "i": 1
+     }
+    ]
+   },
+   "campus-rec": {
+    "top": [
+     {
+      "b": "w2026-37-emea",
+      "v": "campus-rec",
+      "i": 0
+     }
+    ],
+    "more": []
+   }
+  },
+  "flags": {
+   "top": [
+    {
+     "b": "w2026-37-emea",
+     "f": [
+      0
+     ]
+    },
+    {
+     "nf": 0
+    },
+    {
+     "nf": 1
+    }
+   ],
+   "more": [
+    {
+     "b": "w2026-37-emea",
+     "f": [
+      1
+     ]
+    },
+    {
+     "b": "w2026-37-emea",
+     "f": [
+      2
+     ]
+    },
+    {
+     "b": "w2026-37-emea",
+     "f": [
+      3
+     ]
+    },
+    {
+     "b": "w2026-37-emea",
+     "f": [
+      4
+     ]
+    },
+    {
+     "nf": 2
+    }
+   ]
+  },
+  "trending": [
+   {
+    "b": "w2026-37-emea",
+    "t": "competitor-hospitality-scope"
+   },
+   {
+    "b": "w2026-37-emea",
+    "t": "euro-2032-italy-stadiums"
+   },
+   {
+    "nt": "pe-consolidation-continental-clubs"
+   }
+  ]
+ },
+ {
+  "id": "m2026-08-emea",
+  "year": 2026,
+  "month": 8,
+  "issues": [
+   "35",
+   "33",
+   "31"
+  ],
+  "overview": {
+   "lead": {
+    "b": "w2026-33-emea"
+   },
+   "supporting": [
+    {
+     "fromObi": "w2026-31-emea"
+    },
+    {
+     "fromObi": "w2026-35-emea"
+    }
+   ]
+  },
+  "verticals": {
+   "hospitality": {
+    "top": [
+     {
+      "b": "w2026-33-emea",
+      "v": "hospitality",
+      "i": 2
+     },
+     {
+      "b": "w2026-35-emea",
+      "v": "hospitality",
+      "i": 0
+     },
+     {
+      "b": "w2026-33-emea",
+      "v": "hospitality",
+      "i": 1
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-37-emea",
+      "v": "hospitality",
+      "i": 2
+     },
+     {
+      "b": "w2026-35-emea",
+      "v": "hospitality",
+      "i": 1
+     },
+     {
+      "b": "w2026-35-emea",
+      "v": "hospitality",
+      "i": 2
+     },
+     {
+      "b": "w2026-33-emea",
+      "v": "hospitality",
+      "i": 0
+     }
+    ]
+   },
+   "health-clubs": {
+    "top": [
+     {
+      "b": "w2026-33-emea",
+      "v": "health-clubs",
+      "i": 1
+     },
+     {
+      "b": "w2026-33-emea",
+      "v": "health-clubs",
+      "i": 3
+     },
+     {
+      "b": "w2026-35-emea",
+      "v": "health-clubs",
+      "i": 2
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-35-emea",
+      "v": "health-clubs",
+      "i": 0
+     },
+     {
+      "b": "w2026-35-emea",
+      "v": "health-clubs",
+      "i": 1
+     },
+     {
+      "b": "w2026-33-emea",
+      "v": "health-clubs",
+      "i": 0
+     },
+     {
+      "b": "w2026-33-emea",
+      "v": "health-clubs",
+      "i": 2
+     }
+    ]
+   },
+   "multi-unit": {
+    "top": [
+     {
+      "b": "w2026-35-emea",
+      "v": "multi-unit",
+      "i": 1
+     },
+     {
+      "b": "w2026-33-emea",
+      "v": "multi-unit",
+      "i": 1
+     },
+     {
+      "b": "w2026-33-emea",
+      "v": "multi-unit",
+      "i": 0
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-35-emea",
+      "v": "multi-unit",
+      "i": 2
+     },
+     {
+      "b": "w2026-33-emea",
+      "v": "multi-unit",
+      "i": 2
+     },
+     {
+      "b": "w2026-35-emea",
+      "v": "multi-unit",
+      "i": 0
+     }
+    ]
+   },
+   "performance": {
+    "top": [
+     {
+      "b": "w2026-35-emea",
+      "v": "performance",
+      "i": 0
+     },
+     {
+      "b": "w2026-35-emea",
+      "v": "performance",
+      "i": 1
+     },
+     {
+      "b": "w2026-33-emea",
+      "v": "performance",
+      "i": 0
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-35-emea",
+      "v": "performance",
+      "i": 2
+     },
+     {
+      "b": "w2026-33-emea",
+      "v": "performance",
+      "i": 1
+     },
+     {
+      "b": "w2026-33-emea",
+      "v": "performance",
+      "i": 2
+     }
+    ]
+   },
+   "campus-rec": {
+    "top": [
+     {
+      "b": "w2026-35-emea",
+      "v": "campus-rec",
+      "i": 0
+     },
+     {
+      "b": "w2026-35-emea",
+      "v": "campus-rec",
+      "i": 1
+     },
+     {
+      "b": "w2026-33-emea",
+      "v": "campus-rec",
+      "i": 0
+     }
+    ],
+    "more": []
+   }
+  },
+  "flags": {
+   "top": [
+    {
+     "b": "w2026-35-emea",
+     "f": [
+      1
+     ]
+    },
+    {
+     "b": "w2026-33-emea",
+     "f": [
+      0
+     ]
+    },
+    {
+     "b": "w2026-33-emea",
+     "f": [
+      1
+     ]
+    }
+   ],
+   "more": [
+    {
+     "b": "w2026-33-emea",
+     "f": [
+      2
+     ]
+    },
+    {
+     "b": "w2026-31-emea",
+     "f": [
+      0
+     ]
+    },
+    {
+     "b": "w2026-35-emea",
+     "f": [
+      0
+     ]
+    },
+    {
+     "b": "w2026-33-emea",
+     "f": [
+      3
+     ]
+    },
+    {
+     "b": "w2026-31-emea",
+     "f": [
+      1
+     ]
+    },
+    {
+     "b": "w2026-31-emea",
+     "f": [
+      2
+     ]
+    },
+    {
+     "b": "w2026-31-emea",
+     "f": [
+      3
+     ]
+    },
+    {
+     "b": "w2026-35-emea",
+     "f": [
+      2
+     ]
+    },
+    {
+     "b": "w2026-33-emea",
+     "f": [
+      4
+     ]
+    },
+    {
+     "b": "w2026-31-emea",
+     "f": [
+      4
+     ]
+    }
+   ]
+  },
+  "trending": [
+   {
+    "b": "w2026-35-emea",
+    "t": "uk-public-leisure-capital"
+   },
+   {
+    "b": "w2026-35-emea",
+    "t": "competitor-bundled-service-term"
+   },
+   {
+    "b": "w2026-31-emea",
+    "t": "Portfolio standardization replaces site-by-site bidding"
+   }
+  ]
+ },
+ {
+  "id": "m2026-07-emea",
+  "year": 2026,
+  "month": 7,
+  "issues": [
+   "29",
+   "27"
+  ],
+  "overview": {
+   "lead": {
+    "b": "w2026-29-emea"
+   },
+   "supporting": [
+    {
+     "fromObi": "w2026-27-emea"
+    },
+    {
+     "fromCard": {
+      "b": "w2026-31-emea",
+      "v": "health-clubs",
+      "i": 0
+     }
+    }
+   ]
+  },
+  "verticals": {
+   "campus-rec": {
+    "top": [
+     {
+      "b": "w2026-31-emea",
+      "v": "campus-rec",
+      "i": 0
+     },
+     {
+      "b": "w2026-31-emea",
+      "v": "campus-rec",
+      "i": 1
+     },
+     {
+      "b": "w2026-31-emea",
+      "v": "campus-rec",
+      "i": 2
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-29-emea",
+      "v": "campus-rec",
+      "i": 1
+     },
+     {
+      "b": "w2026-27-emea",
+      "v": "campus-rec",
+      "i": 0
+     },
+     {
+      "b": "w2026-37-emea",
+      "v": "campus-rec",
+      "i": 1
+     },
+     {
+      "b": "w2026-33-emea",
+      "v": "campus-rec",
+      "i": 1
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "campus-rec",
+      "i": 0
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "campus-rec",
+      "i": 2
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "campus-rec",
+      "i": 3
+     },
+     {
+      "b": "w2026-27-emea",
+      "v": "campus-rec",
+      "i": 1
+     },
+     {
+      "b": "w2026-27-emea",
+      "v": "campus-rec",
+      "i": 2
+     }
+    ]
+   },
+   "health-clubs": {
+    "top": [
+     {
+      "b": "w2026-31-emea",
+      "v": "health-clubs",
+      "i": 0
+     },
+     {
+      "b": "w2026-31-emea",
+      "v": "health-clubs",
+      "i": 2
+     },
+     {
+      "b": "w2026-31-emea",
+      "v": "health-clubs",
+      "i": 1
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-31-emea",
+      "v": "health-clubs",
+      "i": 3
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "health-clubs",
+      "i": 0
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "health-clubs",
+      "i": 1
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "health-clubs",
+      "i": 2
+     },
+     {
+      "b": "w2026-27-emea",
+      "v": "health-clubs",
+      "i": 0
+     },
+     {
+      "b": "w2026-27-emea",
+      "v": "health-clubs",
+      "i": 1
+     },
+     {
+      "b": "w2026-27-emea",
+      "v": "health-clubs",
+      "i": 2
+     }
+    ]
+   },
+   "hospitality": {
+    "top": [
+     {
+      "b": "w2026-31-emea",
+      "v": "hospitality",
+      "i": 0
+     },
+     {
+      "b": "w2026-31-emea",
+      "v": "hospitality",
+      "i": 2
+     },
+     {
+      "b": "w2026-31-emea",
+      "v": "hospitality",
+      "i": 1
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-29-emea",
+      "v": "hospitality",
+      "i": 0
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "hospitality",
+      "i": 1
+     },
+     {
+      "b": "w2026-27-emea",
+      "v": "hospitality",
+      "i": 0
+     },
+     {
+      "b": "w2026-27-emea",
+      "v": "hospitality",
+      "i": 1
+     },
+     {
+      "b": "w2026-27-emea",
+      "v": "hospitality",
+      "i": 2
+     }
+    ]
+   },
+   "multi-unit": {
+    "top": [
+     {
+      "b": "w2026-31-emea",
+      "v": "multi-unit",
+      "i": 0
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "multi-unit",
+      "i": 0
+     },
+     {
+      "b": "w2026-27-emea",
+      "v": "multi-unit",
+      "i": 0
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-29-emea",
+      "v": "multi-unit",
+      "i": 2
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "multi-unit",
+      "i": 1
+     },
+     {
+      "b": "w2026-31-emea",
+      "v": "multi-unit",
+      "i": 1
+     },
+     {
+      "b": "w2026-31-emea",
+      "v": "multi-unit",
+      "i": 2
+     }
+    ]
+   },
+   "performance": {
+    "top": [
+     {
+      "b": "w2026-27-emea",
+      "v": "performance",
+      "i": 0
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "performance",
+      "i": 2
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "performance",
+      "i": 3
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-31-emea",
+      "v": "performance",
+      "i": 0
+     },
+     {
+      "b": "w2026-31-emea",
+      "v": "performance",
+      "i": 1
+     },
+     {
+      "b": "w2026-31-emea",
+      "v": "performance",
+      "i": 2
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "performance",
+      "i": 0
+     },
+     {
+      "b": "w2026-27-emea",
+      "v": "performance",
+      "i": 1
+     }
+    ]
+   }
+  },
+  "flags": {
+   "top": [
+    {
+     "b": "w2026-29-emea",
+     "f": [
+      0
+     ]
+    },
+    {
+     "b": "w2026-27-emea",
+     "f": [
+      0
+     ]
+    },
+    {
+     "b": "w2026-29-emea",
+     "f": [
+      1
+     ]
+    }
+   ],
+   "more": [
+    {
+     "b": "w2026-27-emea",
+     "f": [
+      1
+     ]
+    },
+    {
+     "b": "w2026-29-emea",
+     "f": [
+      2
+     ]
+    },
+    {
+     "b": "w2026-29-emea",
+     "f": [
+      3
+     ]
+    },
+    {
+     "b": "w2026-29-emea",
+     "f": [
+      4
+     ]
+    },
+    {
+     "b": "w2026-27-emea",
+     "f": [
+      2
+     ]
+    },
+    {
+     "b": "w2026-27-emea",
+     "f": [
+      3
+     ]
+    }
+   ]
+  },
+  "trending": [
+   {
+    "b": "w2026-27-emea",
+    "t": "National sport-institute and federation investment accelerating across Iberia, DACH, and the Middle East ahead of Glasgow 2026"
+   },
+   {
+    "b": "w2026-27-emea",
+    "t": "Institutional capital consolidating into fewer, larger owners setting multi-site standards"
+   },
+   {
+    "b": "w2026-29-emea",
+    "t": "Gulf and Vision 2030 elite-sport system buildout"
+   }
+  ]
+ },
+ {
+  "id": "m2026-06-emea",
+  "year": 2026,
+  "month": 6,
+  "issues": [
+   "24",
+   "23"
+  ],
+  "overview": {
+   "lead": {
+    "b": "w2026-23-emea"
+   },
+   "supporting": [
+    {
+     "fromObi": "w2026-24-emea"
+    },
+    {
+     "fromCard": {
+      "b": "w2026-27-emea",
+      "v": "multi-unit",
+      "i": 2
+     }
+    }
+   ]
+  },
+  "verticals": {
+   "hospitality": {
+    "top": [
+     {
+      "b": "w2026-29-emea",
+      "v": "hospitality",
+      "i": 2
+     },
+     {
+      "b": "w2026-24-emea",
+      "v": "hospitality",
+      "i": 1
+     },
+     {
+      "b": "w2026-23-emea",
+      "v": "hospitality",
+      "i": 0
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-23-emea",
+      "v": "hospitality",
+      "i": 1
+     },
+     {
+      "b": "w2026-23-emea",
+      "v": "hospitality",
+      "i": 2
+     }
+    ]
+   },
+   "multi-unit": {
+    "top": [
+     {
+      "b": "w2026-27-emea",
+      "v": "multi-unit",
+      "i": 2
+     },
+     {
+      "b": "w2026-24-emea",
+      "v": "multi-unit",
+      "i": 1
+     },
+     {
+      "b": "w2026-23-emea",
+      "v": "multi-unit",
+      "i": 0
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-23-emea",
+      "v": "multi-unit",
+      "i": 2
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "multi-unit",
+      "i": 3
+     },
+     {
+      "b": "w2026-27-emea",
+      "v": "multi-unit",
+      "i": 1
+     },
+     {
+      "b": "w2026-24-emea",
+      "v": "multi-unit",
+      "i": 0
+     },
+     {
+      "b": "w2026-23-emea",
+      "v": "multi-unit",
+      "i": 1
+     }
+    ]
+   },
+   "performance": {
+    "top": [
+     {
+      "b": "w2026-23-emea",
+      "v": "performance",
+      "i": 1
+     },
+     {
+      "b": "w2026-29-emea",
+      "v": "performance",
+      "i": 1
+     },
+     {
+      "b": "w2026-27-emea",
+      "v": "performance",
+      "i": 2
+     }
+    ],
+    "more": []
+   },
+   "health-clubs": {
+    "top": [
+     {
+      "b": "w2026-24-emea",
+      "v": "health-clubs",
+      "i": 0
+     },
+     {
+      "b": "w2026-24-emea",
+      "v": "health-clubs",
+      "i": 1
+     },
+     {
+      "b": "w2026-23-emea",
+      "v": "health-clubs",
+      "i": 0
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-23-emea",
+      "v": "health-clubs",
+      "i": 1
+     },
+     {
+      "b": "w2026-23-emea",
+      "v": "health-clubs",
+      "i": 2
+     }
+    ]
+   },
+   "campus-rec": {
+    "top": [
+     {
+      "b": "w2026-24-emea",
+      "v": "campus-rec",
+      "i": 0
+     },
+     {
+      "b": "w2026-23-emea",
+      "v": "campus-rec",
+      "i": 0
+     },
+     {
+      "b": "w2026-24-emea",
+      "v": "campus-rec",
+      "i": 1
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-23-emea",
+      "v": "campus-rec",
+      "i": 1
+     }
+    ]
+   }
+  },
+  "flags": {
+   "top": [
+    {
+     "b": "w2026-24-emea",
+     "f": [
+      0
+     ]
+    },
+    {
+     "b": "w2026-23-emea",
+     "f": [
+      0
+     ]
+    },
+    {
+     "b": "w2026-24-emea",
+     "f": [
+      1
+     ]
+    }
+   ],
+   "more": [
+    {
+     "b": "w2026-24-emea",
+     "f": [
+      2
+     ]
+    },
+    {
+     "b": "w2026-23-emea",
+     "f": [
+      1
+     ]
+    },
+    {
+     "b": "w2026-23-emea",
+     "f": [
+      2
+     ]
+    },
+    {
+     "b": "w2026-24-emea",
+     "f": [
+      3
+     ]
+    },
+    {
+     "b": "w2026-24-emea",
+     "f": [
+      4
+     ]
+    }
+   ]
+  },
+  "trending": [
+   {
+    "b": "w2026-24-emea",
+    "t": "UK operators invest in recovery and wellness infrastructure across health clubs and hospitality"
+   },
+   {
+    "b": "w2026-24-emea",
+    "t": "Southern European franchise and boutique entries create competitive specification signals"
+   },
+   {
+    "b": "w2026-23-emea",
+    "t": "Institutional capital scales EMEA residential fitness amenity to fund level across the UK, Ireland, and Iberia"
+   }
+  ]
+ },
+ {
+  "id": "m2026-05-emea",
+  "year": 2026,
+  "month": 5,
+  "issues": [
+   "22",
+   "21",
+   "20"
+  ],
+  "overview": {
+   "lead": {
+    "b": "w2026-22-emea"
+   },
+   "supporting": [
+    {
+     "fromObi": "w2026-21-emea"
+    },
+    {
+     "fromObi": "w2026-20-emea"
+    }
+   ]
+  },
+  "verticals": {
+   "hospitality": {
+    "top": [
+     {
+      "b": "w2026-21-emea",
+      "v": "hospitality",
+      "i": 1
+     },
+     {
+      "b": "w2026-21-emea",
+      "v": "hospitality",
+      "i": 2
+     },
+     {
+      "b": "w2026-22-emea",
+      "v": "hospitality",
+      "i": 2
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-24-emea",
+      "v": "hospitality",
+      "i": 0
+     },
+     {
+      "b": "w2026-22-emea",
+      "v": "hospitality",
+      "i": 0
+     },
+     {
+      "b": "w2026-22-emea",
+      "v": "hospitality",
+      "i": 1
+     },
+     {
+      "b": "w2026-21-emea",
+      "v": "hospitality",
+      "i": 0
+     },
+     {
+      "b": "w2026-20-emea",
+      "v": "hospitality",
+      "i": 0
+     },
+     {
+      "b": "w2026-20-emea",
+      "v": "hospitality",
+      "i": 1
+     },
+     {
+      "b": "w2026-20-emea",
+      "v": "hospitality",
+      "i": 2
+     }
+    ]
+   },
+   "performance": {
+    "top": [
+     {
+      "b": "w2026-20-emea",
+      "v": "performance",
+      "i": 0
+     },
+     {
+      "b": "w2026-24-emea",
+      "v": "performance",
+      "i": 0
+     },
+     {
+      "b": "w2026-21-emea",
+      "v": "performance",
+      "i": 1
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-21-emea",
+      "v": "performance",
+      "i": 2
+     },
+     {
+      "b": "w2026-24-emea",
+      "v": "performance",
+      "i": 1
+     },
+     {
+      "b": "w2026-23-emea",
+      "v": "performance",
+      "i": 0
+     },
+     {
+      "b": "w2026-22-emea",
+      "v": "performance",
+      "i": 0
+     },
+     {
+      "b": "w2026-22-emea",
+      "v": "performance",
+      "i": 1
+     },
+     {
+      "b": "w2026-21-emea",
+      "v": "performance",
+      "i": 0
+     },
+     {
+      "b": "w2026-20-emea",
+      "v": "performance",
+      "i": 1
+     }
+    ]
+   },
+   "health-clubs": {
+    "top": [
+     {
+      "b": "w2026-21-emea",
+      "v": "health-clubs",
+      "i": 1
+     },
+     {
+      "b": "w2026-20-emea",
+      "v": "health-clubs",
+      "i": 1
+     },
+     {
+      "b": "w2026-22-emea",
+      "v": "health-clubs",
+      "i": 0
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-22-emea",
+      "v": "health-clubs",
+      "i": 1
+     },
+     {
+      "b": "w2026-22-emea",
+      "v": "health-clubs",
+      "i": 2
+     },
+     {
+      "b": "w2026-21-emea",
+      "v": "health-clubs",
+      "i": 0
+     },
+     {
+      "b": "w2026-21-emea",
+      "v": "health-clubs",
+      "i": 2
+     },
+     {
+      "b": "w2026-20-emea",
+      "v": "health-clubs",
+      "i": 0
+     },
+     {
+      "b": "w2026-20-emea",
+      "v": "health-clubs",
+      "i": 2
+     }
+    ]
+   },
+   "multi-unit": {
+    "top": [
+     {
+      "b": "w2026-20-emea",
+      "v": "multi-unit",
+      "i": 0
+     },
+     {
+      "b": "w2026-22-emea",
+      "v": "multi-unit",
+      "i": 0
+     },
+     {
+      "b": "w2026-22-emea",
+      "v": "multi-unit",
+      "i": 1
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-22-emea",
+      "v": "multi-unit",
+      "i": 2
+     },
+     {
+      "b": "w2026-21-emea",
+      "v": "multi-unit",
+      "i": 0
+     },
+     {
+      "b": "w2026-21-emea",
+      "v": "multi-unit",
+      "i": 1
+     },
+     {
+      "b": "w2026-21-emea",
+      "v": "multi-unit",
+      "i": 2
+     },
+     {
+      "b": "w2026-20-emea",
+      "v": "multi-unit",
+      "i": 1
+     },
+     {
+      "b": "w2026-20-emea",
+      "v": "multi-unit",
+      "i": 2
+     }
+    ]
+   },
+   "campus-rec": {
+    "top": [
+     {
+      "b": "w2026-22-emea",
+      "v": "campus-rec",
+      "i": 1
+     },
+     {
+      "b": "w2026-21-emea",
+      "v": "campus-rec",
+      "i": 1
+     },
+     {
+      "b": "w2026-22-emea",
+      "v": "campus-rec",
+      "i": 2
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-22-emea",
+      "v": "campus-rec",
+      "i": 0
+     },
+     {
+      "b": "w2026-21-emea",
+      "v": "campus-rec",
+      "i": 0
+     },
+     {
+      "b": "w2026-20-emea",
+      "v": "campus-rec",
+      "i": 1
+     }
+    ]
+   }
+  },
+  "flags": {
+   "top": [
+    {
+     "b": "w2026-22-emea",
+     "f": [
+      0
+     ]
+    },
+    {
+     "b": "w2026-21-emea",
+     "f": [
+      0
+     ]
+    },
+    {
+     "b": "w2026-21-emea",
+     "f": [
+      1
+     ]
+    }
+   ],
+   "more": [
+    {
+     "b": "w2026-20-emea",
+     "f": [
+      0
+     ]
+    },
+    {
+     "b": "w2026-20-emea",
+     "f": [
+      1
+     ]
+    },
+    {
+     "b": "w2026-20-emea",
+     "f": [
+      2
+     ]
+    },
+    {
+     "b": "w2026-22-emea",
+     "f": [
+      1
+     ]
+    },
+    {
+     "b": "w2026-21-emea",
+     "f": [
+      2
+     ]
+    },
+    {
+     "b": "w2026-21-emea",
+     "f": [
+      3
+     ]
+    },
+    {
+     "b": "w2026-21-emea",
+     "f": [
+      4
+     ]
+    },
+    {
+     "b": "w2026-20-emea",
+     "f": [
+      3
+     ]
+    },
+    {
+     "b": "w2026-20-emea",
+     "f": [
+      4
+     ]
+    }
+   ]
+  },
+  "trending": [
+   {
+    "b": "w2026-21-emea",
+    "t": "UK Sport infrastructure investment accelerating across coaching, accreditation, and elite-club facility benchmarks ahead of LA 2028"
+   },
+   {
+    "b": "w2026-22-emea",
+    "t": "Strength hardware codifies from informal preference into documented operator brand standards across EMEA"
+   },
+   {
+    "b": "w2026-22-emea",
+    "t": "UK government and institutional capital enter fitness amenity infrastructure on multiple simultaneous tracks"
+   }
+  ]
+ },
+ {
+  "id": "m2026-04-emea",
+  "year": 2026,
+  "month": 4,
+  "issues": [
+   "17"
+  ],
+  "overview": {
+   "lead": {
+    "b": "w2026-17-emea"
+   },
+   "supporting": [
+    {
+     "fromCard": {
+      "b": "w2026-17-emea",
+      "v": "hospitality",
+      "i": 1
+     }
+    },
+    {
+     "fromCard": {
+      "b": "w2026-17-emea",
+      "v": "multi-unit",
+      "i": 1
+     }
+    }
+   ]
+  },
+  "verticals": {
+   "campus-rec": {
+    "top": [
+     {
+      "b": "w2026-20-emea",
+      "v": "campus-rec",
+      "i": 0
+     },
+     {
+      "b": "w2026-17-emea",
+      "v": "campus-rec",
+      "i": 0
+     },
+     {
+      "b": "w2026-17-emea",
+      "v": "campus-rec",
+      "i": 1
+     }
+    ],
+    "more": []
+   },
+   "health-clubs": {
+    "top": [
+     {
+      "b": "w2026-17-emea",
+      "v": "health-clubs",
+      "i": 0
+     },
+     {
+      "b": "w2026-17-emea",
+      "v": "health-clubs",
+      "i": 1
+     },
+     {
+      "b": "w2026-17-emea",
+      "v": "health-clubs",
+      "i": 2
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-17-emea",
+      "v": "health-clubs",
+      "i": 3
+     },
+     {
+      "b": "w2026-17-emea",
+      "v": "health-clubs",
+      "i": 4
+     }
+    ]
+   },
+   "hospitality": {
+    "top": [
+     {
+      "b": "w2026-17-emea",
+      "v": "hospitality",
+      "i": 1
+     },
+     {
+      "b": "w2026-17-emea",
+      "v": "hospitality",
+      "i": 0
+     },
+     {
+      "b": "w2026-17-emea",
+      "v": "hospitality",
+      "i": 2
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-17-emea",
+      "v": "hospitality",
+      "i": 3
+     }
+    ]
+   },
+   "multi-unit": {
+    "top": [
+     {
+      "b": "w2026-17-emea",
+      "v": "multi-unit",
+      "i": 1
+     },
+     {
+      "b": "w2026-17-emea",
+      "v": "multi-unit",
+      "i": 0
+     }
+    ],
+    "more": []
+   },
+   "performance": {
+    "top": [
+     {
+      "b": "w2026-17-emea",
+      "v": "performance",
+      "i": 1
+     },
+     {
+      "b": "w2026-17-emea",
+      "v": "performance",
+      "i": 2
+     },
+     {
+      "b": "w2026-17-emea",
+      "v": "performance",
+      "i": 0
+     }
+    ],
+    "more": [
+     {
+      "b": "w2026-17-emea",
+      "v": "performance",
+      "i": 3
+     }
+    ]
+   }
+  },
+  "flags": {
+   "top": [
+    {
+     "b": "w2026-17-emea",
+     "f": [
+      0
+     ]
+    },
+    {
+     "b": "w2026-17-emea",
+     "f": [
+      1
+     ]
+    },
+    {
+     "b": "w2026-17-emea",
+     "f": [
+      2
+     ]
+    }
+   ],
+   "more": [
+    {
+     "b": "w2026-17-emea",
+     "f": [
+      3
+     ]
+    },
+    {
+     "b": "w2026-17-emea",
+     "f": [
+      4
+     ]
+    },
+    {
+     "b": "w2026-17-emea",
+     "f": [
+      5
+     ]
+    },
+    {
+     "b": "w2026-17-emea",
+     "f": [
+      6
+     ]
+    }
+   ]
+  },
+  "trending": [
+   {
+    "b": "w2026-17-emea",
+    "t": "AI ecosystem partnerships becoming the new commercial fitness battleground"
+   },
+   {
+    "b": "w2026-17-emea",
+    "t": "European fitness market hits record €39.1B with consolidation accelerating at the top"
+   },
+   {
+    "b": "w2026-17-emea",
+    "t": "Discount-segment 24/7 staffless model getting regulatory greenlights across Europe"
+   }
+  ]
+ }
+];
+const NEW_TRENDING = {
+ "connected-content-hotel-residential": {
+  "threadId": "connected-content-hotel-residential",
+  "topic": "Tracked competitors push connected cardio and reformers into hotel and residential floors",
+  "weeks": 1,
+  "verticals": [
+   "hospitality",
+   "multi-unit",
+   "health-clubs"
+  ],
+  "sourceCount": 4,
+  "summary": "Peloton opened commercial bike and tread orders aimed at gyms, hotels and apartments. Technogym launched a US reformer for hotels and residences. Chuze added reformer Pilates with a third-party supplier, and CULTR planned a 3,500-square-foot recovery zone in a 12,000-square-foot club. Studio and connected content now take floor space that strength and cardio used to hold, so reps need a studio answer in every hospitality and multi-unit proposal."
+ },
+ "pe-consolidation-continental-clubs": {
+  "threadId": "pe-consolidation-continental-clubs",
+  "topic": "Private equity consolidates continental budget and mid-market clubs",
+  "weeks": 1,
+  "verticals": [
+   "health-clubs"
+  ],
+  "sourceCount": 4,
+  "summary": "Providence bid a reported 600 million euros for Fitness Park France. VivaGym filed its Synergym deal with Spain's competition regulator on Sept. 4. Urban Gym Group bought Rhythmsports on Sept. 8 and named its first UK TrainMore sites. Each deal hands a new owner an estate to re-tender, and the group procurement lead sets one supplier standard across hundreds of floors."
+ }
+};
+const MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const MONTH_SHORT = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const MONTH_AS_OF = "September 2026";
+function mBrief(id) { return BRIEFS.find(b => b.id === id); }
+function mCard(ref) {
+  if (ref.n) return { ...SEPT_UPDATE.verticals[ref.n][ref.i], _ref: { b: SEPT_UPDATE.id, v: ref.n, i: ref.i } };
+  const src = mBrief(ref.b).verticals[ref.v][ref.i];
+  return { ...src, _ref: { b: ref.b, v: ref.v, i: ref.i } };
+}
+function mFlags(ref) {
+  if (ref.nf !== undefined) return [SEPT_UPDATE.flags[ref.nf]];
+  const b = mBrief(ref.b); return ref.f.map(i => b.flags[i]);
+}
+function mFirstSentences(text, n) {
+  const parts = String(text || '').match(/[^.!?]+(?:[.!?](?!\d)|$)+/g) || [text];
+  return parts.slice(0, n).join('').trim();
+}
+function mSupporting(s) {
+  if (s.headline) return s;
+  if (s.fromObi) {
+    const o = mBrief(s.fromObi).oneBigIdea; const body = o.body || '';
+    const fa = body.indexOf('Field action:');
+    return { headline: o.headline, summary: mFirstSentences(body, 1) + (fa >= 0 ? ' ' + body.slice(fa) : ''), vertical: null };
+  }
+  const c = mCard(s.fromCard);
+  return { headline: c.headline, summary: mFirstSentences(c.context, 2), vertical: s.fromCard.v };
+}
+const MONTHS = MONTH_PLAN.map((p, idx) => {
+  const isCurrent = idx === 0;
+  const verticals = {}; const tops = {};
+  Object.keys(p.verticals).forEach(v => {
+    const top = p.verticals[v].top.map(mCard); const more = p.verticals[v].more.map(mCard);
+    verticals[v] = top.concat(more); tops[v] = top.length;
+  });
+  const fTop = [].concat(...p.flags.top.map(mFlags)); const fMore = [].concat(...p.flags.more.map(mFlags));
+  const flags = fTop.concat(fMore); flags._top = fTop.length;
+  const trending = p.trending.map(t => t.nt ? NEW_TRENDING[t.nt] : (mBrief(t.b).trending || []).find(x => (x.threadId || x.topic) === t.t)).filter(Boolean);
+  const lead = mBrief(p.overview.lead.b);
+  const name = MONTH_NAMES[p.month - 1];
+  const count = Object.values(verticals).reduce((s, a) => s + a.length, 0);
+  return {
+    id: p.id,
+    monthName: name,
+    issue: isCurrent ? `As of ${MONTH_AS_OF}` : `${name} ${p.year}`,
+    weekRange: `${name} ${p.year} · Issues ${p.issues.slice().sort((a, b) => a - b).map(n => '№' + n).join(', ')}${isCurrent && SEPT_UPDATE.verticals ? ' plus the late-month update' : ''}`,
+    weekShort: `${MONTH_SHORT[p.month - 1]} ${p.year}`,
+    oneBigIdea: lead.oneBigIdea,
+    overview: { supporting: (p.overview.supporting || []).map(mSupporting), leadNote: p.overview.leadNote || null },
+    trending, verticals, _tops: tops, flags,
+    metadata: { processed: String(count), delivered: count, dedup: `Monthly view built from issues ${p.issues.join(', ')}.` },
+  };
+});
+function mLabel(briefId) { const m = MONTHS.find(x => x.id === briefId); return m ? m.monthName : 'this month'; }
+
+const mh = React.createElement;
+const M_BTN = {
+  display: 'inline-flex', alignItems: 'center', gap: 8,
+  padding: '10px 14px', background: C.surface,
+  border: `1.5px solid ${C.ink}`, borderRadius: 9,
+  fontFamily: FONT_BODY, fontSize: 10.5, fontWeight: 700, letterSpacing: '0.10em',
+  textTransform: 'uppercase', color: C.ink, cursor: 'pointer', transition: 'all 0.2s ease',
+};
+const M_CSS = `
+  .month-more-hidden { display: none !important; }
+  .month-more-btn:hover { background: ${C.ink} !important; color: ${C.surface} !important; }
+  .month-support-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  @media (max-width: 900px) { .month-support-grid { grid-template-columns: 1fr; gap: 16px; } }
+  @media print { .month-more-hidden { display: grid !important; } .month-more-btn { display: none !important; } }
+`;
+function MoreToggle({ open, count, label, onClick, dark }) {
+  return mh('div', { className: 'no-print', style: { display: 'flex', justifyContent: 'center', marginTop: 20 } },
+    mh('button', {
+      onClick, className: dark ? '' : 'month-more-btn',
+      style: dark ? { ...M_BTN, background: 'transparent', color: C.surface, border: '1.5px solid rgba(255,255,255,0.45)' } : M_BTN,
+    },
+      open ? `Show fewer` : `Show ${count} more from ${label}`,
+      mh(ChevronDown, { size: 13, strokeWidth: 2, style: { transform: open ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' } })));
+}
+
+function VerticalSectionMonthly({ meta, insights, briefId, bookmarkIds, ratings, onBookmark, onRate }) {
+  const [openFor, setOpenFor] = useState(null);
+  const open = openFor === briefId;
+  const toggle = () => setOpenFor(open ? null : briefId);
+  if (!insights || insights.length === 0) return null;
+  const { Icon } = meta;
+  const month = MONTHS.find(m => m.id === briefId);
+  const topN = Math.min(3, month && month._tops[meta.id] !== undefined ? month._tops[meta.id] : 3);
+  const top = insights.slice(0, topN); const more = insights.slice(topN);
+  const noFlip = REGION === 'us' && meta.id === 'performance';
+  const tile = (ins, i) => {
+    const r = ins._ref || { b: briefId, v: meta.id, i };
+    const id = insightId(r.b, r.v, r.i);
+    return mh(InsightTile, {
+      key: id, insight: ins, insightIdStr: id,
+      bookmarked: bookmarkIds.has(id), rating: ratings[id],
+      onBookmark: () => onBookmark(r.b, r.v, r.i, ins), onRate, disableFlip: noFlip,
+    });
+  };
+  const gridClass = (n) => `tile-grid tile-grid-${Math.min(n, 6)}`;
+  return mh('section', { className: 'vertical-section', style: { marginTop: 40, marginBottom: 8 } },
+    mh('style', null, M_CSS),
+    mh('div', { style: { display: 'flex', alignItems: 'center', gap: 12, marginBottom: 18, flexWrap: 'nowrap' } },
+      mh('div', { style: { width: 32, height: 32, borderRadius: 9, background: C.ink, color: C.surface, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 } },
+        mh(Icon, { size: 16, strokeWidth: 2, color: C.surface })),
+      mh('h2', { style: { margin: 0, flexShrink: 0, fontFamily: FONT_DISPLAY, fontWeight: 400, fontSize: 22, lineHeight: 1.10, letterSpacing: '0.006em', color: C.ink } }, meta.name),
+      mh('span', { style: { fontFamily: FONT_BODY, flexShrink: 0, fontSize: 10, fontWeight: 700, letterSpacing: '0.10em', textTransform: 'uppercase', padding: '4px 10px', borderRadius: 999, background: 'transparent', color: C.ink, border: `1.5px solid ${C.ink}` } },
+        `${insights.length} ${insights.length === 1 ? 'insight' : 'insights'}`),
+      mh('div', { style: { flex: 1, height: 1, background: C.ink, opacity: 0.85, marginLeft: 6, minWidth: 24 } })),
+    mh('div', { className: gridClass(top.length) }, top.map((ins, i) => tile(ins, i))),
+    more.length > 0 && mh('div', { className: `${gridClass(more.length)} ${open ? '' : 'month-more-hidden'}`, style: { marginTop: 22 } },
+      more.map((ins, i) => tile(ins, i + topN))),
+    more.length > 0 && mh(MoreToggle, { open, count: more.length, label: mLabel(briefId), onClick: toggle }));
+}
+
+function CompetitiveFlagsMonthly({ flags, briefId }) {
+  const [openFor, setOpenFor] = useState(null);
+  const open = openFor === briefId;
+  const toggle = () => setOpenFor(open ? null : briefId);
+  const list = flags || [];
+  const topN = Math.min(3, list._top !== undefined ? list._top : 3);
+  const card = (f, i) => {
+    const type = f.type || classifyActivityType(f.note);
+    const ts = ACTIVITY_STYLES[type] || ACTIVITY_STYLES.Strategic;
+    return mh('div', { key: i, style: { background: C.surface, borderRadius: 9, borderLeft: `5px solid ${C.red}`, padding: '14px 16px', display: 'flex', flexDirection: 'column', gap: 8 } },
+      mh('div', { style: { display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10 } },
+        mh('span', { style: { fontFamily: FONT_DISPLAY, fontWeight: 400, fontSize: 20, lineHeight: 1.10, letterSpacing: '0.01em', color: C.ink, textTransform: 'uppercase' } }, f.competitor),
+        mh('span', { style: { flexShrink: 0, fontFamily: FONT_BODY, fontSize: 9, fontWeight: 700, letterSpacing: '0.10em', textTransform: 'uppercase', padding: '3px 9px', borderRadius: 999, background: ts.bg, color: ts.color, border: `1px solid ${ts.border}` } }, type)),
+      mh('p', { className: 'flag-note', style: { margin: 0, fontFamily: FONT_BODY, fontSize: 13, lineHeight: 1.55, color: C.inkBody } }, f.note));
+  };
+  const grid = (items, offset, hidden) => mh('div', {
+    className: hidden ? 'month-more-hidden' : '',
+    style: { padding: offset ? '0 20px 20px' : 20, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 14 },
+  }, items.map((f, i) => card(f, i + offset)));
+  const more = list.slice(topN);
+  return mh('div', { className: 'print-light', style: { background: '#0a0a0a', border: `1.75px solid ${C.ink}`, borderRadius: 15, overflow: 'hidden', boxShadow: '4px 5px 0 rgba(0, 0, 0, 0.35)' } },
+    mh('style', null, M_CSS),
+    mh('div', { style: { height: 3, display: 'flex' } }, mh('div', { style: { flex: 1, background: C.red } }), mh('div', { style: { flex: 1, background: C.ink } })),
+    mh('div', { style: { display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, padding: '18px 24px', borderBottom: '1px solid rgba(255,255,255,0.13)', flexWrap: 'wrap' } },
+      mh('div', { style: { display: 'flex', alignItems: 'center', gap: 10 } },
+        mh(Shield, { size: 18, strokeWidth: 2, color: C.surface }),
+        mh('h2', { style: { margin: 0, fontFamily: FONT_DISPLAY, fontWeight: 400, fontSize: 22, lineHeight: 1.10, letterSpacing: '0.01em', color: C.surface } }, 'Competitive Flags'),
+        mh('span', { style: { fontFamily: FONT_BODY, fontSize: 11, color: 'rgba(255,255,255,0.65)', fontStyle: 'italic', marginLeft: 4 } }, `Competitor moves in ${mLabel(briefId)}`)),
+      mh('span', { style: { display: 'inline-flex', alignItems: 'center', gap: 5, fontFamily: FONT_BODY, fontSize: 9.5, padding: '4px 10px', borderRadius: 999, background: 'rgba(255,255,255,0.06)', color: C.surface, border: '1px solid rgba(255,255,255,0.25)', fontWeight: 700, letterSpacing: '0.10em', textTransform: 'uppercase' } },
+        mh(Lock, { size: 9, strokeWidth: 2.5 }), ' Internal only')),
+    grid(list.slice(0, topN), 0, false),
+    more.length > 0 && grid(more, topN, !open),
+    more.length > 0 && mh('div', { style: { paddingBottom: 20 } }, mh(MoreToggle, { open, count: more.length, label: mLabel(briefId), dark: true, onClick: toggle })));
+}
+
+function renderMonthSupporting(brief, isSavedView) {
+  if (isSavedView || !brief || !brief.overview) return null;
+  const sup = brief.overview.supporting || [];
+  if (!sup.length && !brief.overview.leadNote) return null;
+  const vName = (id) => { const v = id && VERTICALS_META.find(x => x.id === id); return v ? v.name : null; };
+  return mh('div', { style: { marginBottom: 36 } },
+    mh('style', null, M_CSS),
+    brief.overview.leadNote && mh('p', { style: { margin: '0 0 18px 0', fontFamily: FONT_BODY, fontSize: 12.5, fontStyle: 'italic', color: C.mute } }, brief.overview.leadNote),
+    sup.length > 0 && mh('div', { style: { display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14 } },
+      mh(Sparkles, { size: 14, strokeWidth: 2.5, color: C.red }),
+      mh('span', { style: { fontFamily: FONT_BODY, fontSize: 10.5, fontWeight: 700, letterSpacing: '0.10em', textTransform: 'uppercase', color: C.red } }, `Also big in ${brief.monthName}`)),
+    sup.length > 0 && mh('div', { className: 'month-support-grid' },
+      sup.map((s, i) => mh('div', { key: i, className: 'fade-in', style: { background: C.surface, border: `1.5px solid ${C.ink}`, borderRadius: 15, padding: '20px 22px', boxShadow: SH.card } },
+        vName(s.vertical) && mh('div', { style: { fontFamily: FONT_BODY, fontSize: 9.5, fontWeight: 700, letterSpacing: '0.10em', textTransform: 'uppercase', color: C.mute, marginBottom: 8 } }, vName(s.vertical)),
+        mh('h3', { style: { margin: '0 0 10px 0', fontFamily: FONT_DISPLAY, fontWeight: 400, fontSize: 19, lineHeight: 1.15, letterSpacing: '0.006em', color: C.ink } }, s.headline),
+        mh('p', { style: { margin: 0, fontFamily: FONT_BODY, fontSize: 13.5, lineHeight: 1.55, color: C.inkBody } }, s.summary)))));
+}
+// ==================== END MONTHLY CONSOLIDATED VIEW ====================
+
+
 // -------------------- PERSISTENCE HELPERS --------------------
 // Safe localStorage wrappers — fail silently if storage is disabled
 // (some corporate devices, private browsing, etc.).
@@ -4757,7 +6811,7 @@ function CompetitiveFlags({ flags }) {
 
 // -------------------- MAIN --------------------
 function IntelBrief() {
-  const [selectedId, setSelectedId] = useState(BRIEFS[0].id);
+  const [selectedId, setSelectedId] = useState(MONTHS[0].id);
   const [filter, setFilter] = useState('all');
   const [weekPickerOpen, setWeekPickerOpen] = useState(false);
   const [regionPickerOpen, setRegionPickerOpen] = useState(false);
@@ -4816,7 +6870,7 @@ function IntelBrief() {
     try {
       if (typeof window !== 'undefined' && window.plausible) {
         window.plausible(value === 'up' ? 'Brief Rated Helpful' : 'Brief Rated Not Helpful', {
-          props: { issue: BRIEFS.find(b => b.id === selectedId)?.issue || 'unknown' }
+          props: { issue: MONTHS.find(b => b.id === selectedId)?.issue || 'unknown' }
         });
       }
     } catch (e) { /* noop */ }
@@ -4847,7 +6901,7 @@ function IntelBrief() {
     });
   };
 
-  const brief = useMemo(() => BRIEFS.find(b => b.id === selectedId), [selectedId]);
+  const brief = useMemo(() => MONTHS.find(b => b.id === selectedId), [selectedId]);
   const trendingCapped = useMemo(() => (brief.trending || []).slice(0, 3), [brief]);
   const totalInsights = useMemo(
     () => Object.values(brief.verticals).reduce((s, arr) => s + arr.length, 0) + trendingCapped.length,
@@ -5247,7 +7301,7 @@ function IntelBrief() {
               fontSize: 42, lineHeight: 0.98, letterSpacing: '0.005em',
               color: C.ink, maxWidth: 720,
             }}>
-              Biweekly Intelligence Brief
+              Monthly Intelligence Brief
             </h1>
           </div>
           <div className="hero-right" style={{
@@ -5355,7 +7409,7 @@ function IntelBrief() {
                 borderRadius: 15, minWidth: 280, zIndex: 20,
                 boxShadow: SH.modal, overflow: 'hidden',
               }}>
-                {BRIEFS.map(b => (
+                {MONTHS.map(b => (
                   <button key={b.id} onClick={() => { setSelectedId(b.id); setWeekPickerOpen(false); setFilter('all'); }}
                     className="week-option"
                     style={{
@@ -5506,6 +7560,7 @@ function IntelBrief() {
 
       {/* ============ FILTER ============ */}
       <div className="content-wrap" style={{ maxWidth: 1180, margin: '0 auto', padding: '36px 32px 44px' }}>
+        {renderMonthSupporting(brief, isSavedView)}
         <div className="no-print filter-row" style={{
           display: 'flex', alignItems: 'center', gap: 6,
           marginBottom: 36, flexWrap: 'wrap',
@@ -5661,7 +7716,7 @@ function IntelBrief() {
 
         {/* VERTICAL SECTIONS */}
         {showVerticals && visibleVerticals.map(meta => (
-          <VerticalSection
+          <VerticalSectionMonthly
             key={meta.id}
             meta={meta}
             insights={brief.verticals[meta.id]}
@@ -5678,7 +7733,7 @@ function IntelBrief() {
         {/* COMPETITIVE FLAGS */}
         {showFlags && (
         <section id="competitive-flags-section" style={{ marginTop: 20, marginBottom: 32, scrollMarginTop: 80 }}>
-          <CompetitiveFlags flags={brief.flags} />
+          <CompetitiveFlagsMonthly flags={brief.flags} briefId={brief.id} />
         </section>
         )}
 
